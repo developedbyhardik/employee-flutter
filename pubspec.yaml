@@ -1,0 +1,62 @@
+name: cosmocloud
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_animate: ^4.5.0
+  flutter_riverpod: ^2.5.1
+  http: ^1.2.2
+  multiple_result: ^5.1.0
+  phosphor_flutter: ^2.1.0
+  toastification: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  json_serializable: ^6.8.0
+  build_runner: ^2.4.11
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - fonts/
+
+  fonts:
+    - family: CircularStd-Light
+      fonts:
+        - asset: fonts/Circular/CircularStd-Light.ttf
+    - family: CircularStd-Book
+      fonts:
+        - asset: fonts/Circular/CircularStd-Book.ttf
+        - asset: fonts/Circular/CircularStd-BookItalic.ttf
+          style: italic
+    - family: CircularStd-Medium
+      fonts:
+        - asset: fonts/Circular/CircularStd-Medium.ttf
+          weight: 500
+        - asset: fonts/Circular/CircularStd-MediumItalic.ttf
+          weight: 500
+          style: italic
+    - family: CircularStd-Bold
+      fonts:
+        - asset: fonts/Circular/CircularStd-Bold.ttf
+          weight: 700
+        - asset: fonts/Circular/CircularStd-BoldItalic.ttf
+          weight: 700
+          style: italic
+    - family: CircularStd-Black
+      fonts:
+        - asset: fonts/Circular/CircularStd-Black.ttf
+          weight: 900
+        - asset: fonts/Circular/CircularStd-BlackItalic.ttf
+          weight: 900
+          style: italic
+
