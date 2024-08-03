@@ -33,6 +33,9 @@ class EmployeeListScreen extends ConsumerWidget {
               .watch(
                   employeeControllerProvider.select((value) => value.employees))
               .when(data: (employees) {
+        if (employees.isEmpty) {
+          return EmployeeListEmpty();
+        }
         return ListView.builder(
           itemCount: employees.length,
           itemBuilder: (context, index) {
@@ -115,7 +118,10 @@ class EmployeeListEmpty extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(PhosphorIcons.warning(PhosphorIconsStyle.bold)),
+          Icon(
+            PhosphorIcons.binoculars(PhosphorIconsStyle.duotone),
+            size: 35,
+          ),
           Text(
             "No employee found",
             textAlign: TextAlign.center,
